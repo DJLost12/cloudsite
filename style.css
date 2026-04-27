@@ -1,0 +1,241 @@
+:root {
+  --bg: #08111f;
+  --panel: #0f1b2d;
+  --panel-border: #1d314d;
+  --text: #e5edf7;
+  --muted: #98a8bd;
+  --accent: #7dd3fc;
+  --accent-strong: #38bdf8;
+  --shadow: rgba(8, 17, 31, 0.35);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background:
+    radial-gradient(circle at top, #12233c 0%, transparent 35%),
+    linear-gradient(180deg, #09111d 0%, var(--bg) 100%);
+  color: var(--text);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 4rem;
+}
+
+.site-nav {
+  display: flex;
+  gap: 0.9rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.site-nav a,
+.site-nav a:visited,
+.contact-list a,
+.contact-list a:visited {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.site-nav a {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.35rem 0.75rem;
+  border: 1px solid var(--panel-border);
+  border-radius: 999px;
+  background: rgba(15, 27, 45, 0.6);
+  transition:
+    background-color 0.15s ease,
+    border-color 0.15s ease,
+    color 0.15s ease,
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.site-nav a:hover,
+.contact-list a:hover {
+  color: #b8ecff;
+}
+
+.site-nav a:hover {
+  background: rgba(23, 40, 65, 0.95);
+  border-color: rgba(125, 211, 252, 0.35);
+  transform: translateY(-1px);
+  box-shadow: 0 8px 18px rgba(8, 17, 31, 0.18);
+}
+
+.site-nav a:active {
+  transform: translateY(0);
+}
+
+header {
+  margin-bottom: 2.5rem;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 220px;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.hero-copy {
+  min-width: 0;
+}
+
+h1 {
+  font-size: clamp(2.4rem, 6vw, 4rem);
+  line-height: 1.05;
+  margin-bottom: 0.35rem;
+}
+
+.tagline {
+  color: var(--muted);
+  font-size: 1.05rem;
+  margin-bottom: 1rem;
+}
+
+.intro {
+  max-width: 60ch;
+  margin: 0;
+}
+
+.hero-photo {
+  margin: 0;
+  justify-self: end;
+}
+
+.hero-photo img {
+  display: block;
+  width: 220px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 24px;
+  border: 1px solid rgba(125, 211, 252, 0.18);
+  box-shadow: 0 18px 40px var(--shadow);
+  background: linear-gradient(135deg, rgba(29, 49, 77, 0.85), rgba(15, 27, 45, 0.95));
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+.card {
+  background: rgba(15, 27, 45, 0.88);
+  border: 1px solid var(--panel-border);
+  border-radius: 16px;
+  padding: 1.25rem;
+  box-shadow: 0 18px 40px var(--shadow);
+}
+
+h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: var(--accent);
+}
+
+h3 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  font-size: 1.05rem;
+}
+
+ul {
+  padding-left: 1.2rem;
+}
+
+.project-item {
+  margin-bottom: 1rem;
+}
+
+.project-item p {
+  margin-top: 0;
+}
+
+.contact-list {
+  margin: 0;
+}
+
+li {
+  margin-bottom: 0.4rem;
+}
+
+button {
+  margin-top: 0.5rem;
+  padding: 0.75rem 1.1rem;
+  border: none;
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-strong) 100%);
+  color: #020617;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+button:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+button:focus-visible {
+  outline: 3px solid rgba(125, 211, 252, 0.35);
+  outline-offset: 3px;
+}
+
+a:focus-visible {
+  outline: 3px solid rgba(125, 211, 252, 0.35);
+  outline-offset: 3px;
+  border-radius: 999px;
+}
+
+.muted {
+  color: var(--muted);
+}
+
+.project-output {
+  min-height: 1.6em;
+  margin-top: 1rem;
+  color: var(--accent);
+}
+
+footer {
+  margin-top: 3rem;
+  font-size: 0.85rem;
+  color: var(--muted);
+  border-top: 1px solid #1e293b;
+  padding-top: 1rem;
+}
+
+@media (max-width: 640px) {
+  .container {
+    padding-inline: 1rem;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-photo {
+    justify-self: start;
+  }
+
+  .hero-photo img {
+    width: min(220px, 60vw);
+  }
+
+  .card {
+    padding: 1rem;
+  }
+}

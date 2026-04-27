@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Roy Hammond</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main class="container">
+    <nav class="site-nav" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#currently">Currently</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <header class="hero">
+      <div class="hero-copy">
+        <h1>Roy Hammond</h1>
+        <p class="tagline">Night-owl builder, systems thinker, and lifelong tinkerer.</p>
+        <p class="intro">
+          This is my corner of the internet where I document what I'm learning,
+          what I'm building, and how I'm figuring things out as I go.
+        </p>
+      </div>
+
+      <figure class="hero-photo">
+        <img src="images/IMG_0006.JPG" alt="Portrait of Roy Hammond">
+      </figure>
+    </header>
+
+    <section id="about" class="card">
+      <h2>About</h2>
+      <p>
+        I like taking things apart, learning how they work, and putting them back
+        together in a way that makes sense to me. Right now that means web development,
+        Docker, servers, and the small systems behind the scenes that keep everything running.
+      </p>
+    </section>
+
+    <section id="currently" class="card">
+      <h2>Currently</h2>
+      <ul>
+        <li>Building a personal web stack with Docker</li>
+        <li>Learning HTML, CSS, and JavaScript fundamentals</li>
+        <li>Designing systems that persist and scale</li>
+      </ul>
+    </section>
+
+    <section id="projects" class="card">
+      <h2>Projects</h2>
+      <article class="project-item">
+        <h3>Personal Site and Home Web Stack</h3>
+        <p>
+          I built and host this site from my Ubuntu server using nginx in Docker.
+          It is part personal site, part lab, and part reminder that I learn best by building something real.
+        </p>
+        <ul>
+          <li>Ubuntu server hosted at home</li>
+          <li>nginx running in Docker</li>
+          <li>Remote workflow with SSH and VS Code</li>
+          <li>DuckDNS used for public access</li>
+        </ul>
+      </article>
+
+      <button id="projectBtn">Why this site exists</button>
+      <p id="projectOutput" class="project-output" aria-live="polite"></p>
+    </section>
+
+    <section id="contact" class="card">
+      <h2>Contact</h2>
+      <p class="muted">Best way to reach me is email.</p>
+      <ul class="contact-list">
+        <li><a href="mailto:nvpdyersburg@gmail.com">Email: nvpdyersburg@gmail.com</a></li>
+        <li><a href="https://www.linkedin.com/in/roy-hammond-a752933b6/" target="_blank" rel="noreferrer">LinkedIn</a></li>
+        <li><a href="https://github.com/DJLost12" target="_blank" rel="noreferrer">GitHub</a></li>
+      </ul>
+    </section>
+    <footer>
+      <p>&copy; <span id="year"></span> Roy Hammond</p>
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
