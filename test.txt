@@ -1,2 +1,0 @@
-hello
-I use nano! I dont like vim. Do YOU like vim?
