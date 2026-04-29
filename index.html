@@ -19,10 +19,10 @@
     <header class="hero">
       <div class="hero-copy">
         <h1>Roy Hammond</h1>
-        <p class="tagline">Night-owl builder, systems thinker, and lifelong tinkerer.</p>
+        <p class="tagline">Builder, systems thinker, and lifelong tinkerer.</p>
         <p class="intro">
-          This is my corner of the internet where I document what I'm learning,
-          what I'm building, and how I'm figuring things out as I go.
+          This is my corner of the internet, where I share what I'm building,
+          what I'm learning, and the systems work behind getting it all running.
         </p>
       </div>
 
@@ -34,8 +34,8 @@
     <section id="about" class="card">
       <h2>About</h2>
       <p>
-        I like taking things apart, learning how they work, and putting them back
-        together in a way that makes sense to me. Right now that means web development,
+        I like understanding how things work, breaking them down, and putting them
+        back together in a way that makes sense. Right now, that means web development,
         Docker, servers, and the small systems behind the scenes that keep everything running.
       </p>
     </section>
@@ -45,8 +45,8 @@
       <article class="project-item">
         <h3>Personal Site and Home Web Stack</h3>
         <p>
-          I built and host this site from my Ubuntu server using nginx in Docker.
-          It is part personal site, part lab, and part reminder that I learn best by building something real.
+          I built and host this site from my Ubuntu server with nginx running in Docker.
+          It's part personal site, part lab, and part proof that I learn best by building something real.
         </p>
         <ul>
           <li>Ubuntu server hosted at home</li>
@@ -56,20 +56,27 @@
         </ul>
       </article>
       <article class="project-item">
-        <h3>Developing Real world IT and coding skills</h3>
+        <h3>Developing Real-World IT and Coding Skills</h3>
         <p>
-          I am starting work on learning python basics as an intro to programming.
+          I'm using Python as my entry point into programming and building stronger technical fundamentals as I go.
         </p>
         <ul>
-          <li>Learning python as a first language.</li>
-          <li>Using git to reinforce real developer workflow</li>
-          <li>Using python as an introduction to data structure and learning to think like a developer</li>
+          <li>Learning Python as my first programming language</li>
+          <li>Using Git to build solid version control habits and a real development workflow</li>
+          <li>Using Python to learn data structures and start thinking more like a developer</li>
         </ul>
       </article>
     </section>
-  <section id="javascript" class="card">
-      <button id="projectBtn">Why this site exists</button>
-      <p id="projectOutput" class="project-output" aria-live="polite"></p>
+    <section id="javascript" class="card">
+      <h2>Why This Site Exists</h2>
+      <p class="muted">
+        This started as a way to prove I could get a site online, but it turned into something more useful.
+      </p>
+      <button id="projectBtn" type="button" aria-expanded="false">Show reason 1 of 3</button>
+      <div id="projectOutput" class="project-output" aria-live="polite" hidden>
+        <p id="projectTitle" class="project-output-title"></p>
+        <p id="projectMessage" class="project-output-message"></p>
+      </div>
     </section>
 
     <section id="contact" class="card">

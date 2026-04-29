@@ -205,9 +205,25 @@ a:focus-visible {
 }
 
 .project-output {
-  min-height: 1.6em;
   margin-top: 1rem;
+  padding: 1rem;
+  border: 1px solid rgba(125, 211, 252, 0.2);
+  border-radius: 14px;
+  background: rgba(8, 17, 31, 0.55);
+}
+
+.project-output[hidden] {
+  display: none;
+}
+
+.project-output-title {
+  margin: 0 0 0.4rem;
   color: var(--accent);
+  font-weight: 600;
+}
+
+.project-output-message {
+  margin: 0;
 }
 
 footer {
