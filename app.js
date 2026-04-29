@@ -18,7 +18,7 @@ const reasons = [
   {
     title: "Proof of steady progress",
     message:
-      "I'm not trying to pretend I know everything already. This site is a record of progress, and I want it to get better as my skills get better.",
+      "This site serves as a record of progress and a way to demonstrate to myself that I am learning. Also, my site has a clicky button now!",
   },
 ];
 
